@@ -1,0 +1,56 @@
+/*@import url('https://fonts.googleapis.com/css?family=Work+Sans:500,600');*/
+
+#mainMenu {
+	position:fixed;
+	top:0; 
+	font-family:Work Sans;
+	font-weight:500;
+	font-size:16px;
+	background:blue;
+	color:#FFF;
+	height:100vh;
+	display:grid;
+	grid-template-columns: 1fr 6fr;
+
+	width:400px;
+	right:-375px;
+
+	transition:right 0.2s;
+	z-index:9999;
+
+}
+
+#mainMenu.open {
+	right:0;
+}
+
+
+#mainMenu ul {
+	list-style-type: none;	
+	margin:0;
+	padding:0.25em 0.2em;
+
+}
+
+#mainMenu ul li {
+	cursor:pointer;
+}
+
+#mainMenu ul li:hover { 
+	color:#000;
+}
+
+a.menuLink {
+	color:#FFF;
+}
+
+#openClose {
+	padding:0.25em;
+	height:1.5em;
+	transition:all 0.4s;
+}
+
+
+.open #openClose {
+	transform:rotate(180deg);
+}

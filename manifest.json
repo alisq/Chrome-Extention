@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+	"icons": { "16": "icon16.png",   	//name your icon files in here.
+	           "48": "icon48.png",		//name your icon files in here.
+	          "128": "icon128.png" },	//name your icon files in here.
+
+
+	"browser_action": {
+    	"default_icon": "icon128.png"
+  	},
+
+
+  "name": "NAME YOUR EXTENSION HERE",
+  "version": "0.1.0",
+  "description": "DESCRIBE IT IN ONE SENTENCE",
+
+
+  "content_scripts": [{
+    "js": ["jquery-3.1.0.min.js","content.js"],
+    "css": ["style.css"],
+    "matches": ["http://*/*","https://*/*"] //place your URL matches here https://developer.chrome.com/extensions/match_patterns
+  }]
+
+}
